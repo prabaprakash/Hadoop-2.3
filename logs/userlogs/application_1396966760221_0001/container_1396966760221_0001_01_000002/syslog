@@ -1,0 +1,32 @@
+2014-04-08 19:55:28,139 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-04-08 19:55:28,141 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-04-08 19:55:28,299 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2014-04-08 19:55:28,373 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2014-04-08 19:55:28,373 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system started
+2014-04-08 19:55:28,392 INFO [main] org.apache.hadoop.mapred.YarnChild: Executing with tokens:
+2014-04-08 19:55:28,392 INFO [main] org.apache.hadoop.mapred.YarnChild: Kind: mapreduce.job, Service: job_1396966760221_0001, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@76933bcb)
+2014-04-08 19:55:28,484 INFO [main] org.apache.hadoop.mapred.YarnChild: Sleeping for 0ms before retrying again. Got null now.
+2014-04-08 19:55:28,783 INFO [main] org.apache.hadoop.mapred.YarnChild: mapreduce.cluster.local.dir for child: /tmp/hadoop-PrabaKarthi/nm-local-dir/usercache/PrabaKarthi/appcache/application_1396966760221_0001
+2014-04-08 19:55:28,973 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-04-08 19:55:28,974 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-04-08 19:55:28,989 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: dfs.webhdfs.enabled;  Ignoring.
+2014-04-08 19:55:29,266 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-04-08 19:55:29,601 INFO [main] org.apache.hadoop.yarn.util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+2014-04-08 19:55:29,924 INFO [main] org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@6e0f0ad
+2014-04-08 19:55:30,264 INFO [main] org.apache.hadoop.mapred.MapTask: Processing split: hdfs://127.0.0.1:9000/in/recipeitems-latest.json:0+119406636
+2014-04-08 19:55:30,297 INFO [main] org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2014-04-08 19:55:30,393 INFO [main] org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2014-04-08 19:55:30,394 INFO [main] org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2014-04-08 19:55:30,394 INFO [main] org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2014-04-08 19:55:30,394 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2014-04-08 19:55:30,394 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2014-04-08 19:55:41,887 INFO [main] org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2014-04-08 19:55:41,887 INFO [main] org.apache.hadoop.mapred.MapTask: Spilling map output
+2014-04-08 19:55:41,887 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 1412384; bufvoid = 104857600
+2014-04-08 19:55:41,887 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 25626604(102506416); length = 587793/6553600
+2014-04-08 19:55:42,317 INFO [main] org.apache.hadoop.mapred.MapTask: Finished spill 0
+2014-04-08 19:55:42,332 INFO [main] org.apache.hadoop.mapred.Task: Task:attempt_1396966760221_0001_m_000000_0 is done. And is in the process of committing
+2014-04-08 19:55:42,657 INFO [main] org.apache.hadoop.mapred.Task: Task 'attempt_1396966760221_0001_m_000000_0' done.
+2014-04-08 19:55:42,782 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping MapTask metrics system...
+2014-04-08 19:55:42,783 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system stopped.
+2014-04-08 19:55:42,783 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system shutdown complete.

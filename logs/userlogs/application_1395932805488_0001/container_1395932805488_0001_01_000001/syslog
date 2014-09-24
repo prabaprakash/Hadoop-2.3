@@ -1,0 +1,513 @@
+2014-03-27 20:37:55,818 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Created MRAppMaster for application appattempt_1395932805488_0001_000001
+2014-03-27 20:37:56,185 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-03-27 20:37:56,186 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-03-27 20:37:56,323 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Executing with tokens:
+2014-03-27 20:37:56,323 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Kind: YARN_AM_RM_TOKEN, Service: , Ident: (org.apache.hadoop.yarn.security.AMRMTokenIdentifier@6cf1f051)
+2014-03-27 20:37:56,374 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: The specific max attempts: 2 for application: 1. Attempt num: 1 is last retry: false
+2014-03-27 20:37:56,382 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Using mapred newApiCommitter.
+2014-03-27 20:37:56,497 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-03-27 20:37:56,498 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-03-27 20:37:57,066 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: OutputCommitter set in config null
+2014-03-27 20:37:57,120 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2014-03-27 20:37:57,139 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.jobhistory.EventType for class org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler
+2014-03-27 20:37:57,140 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher
+2014-03-27 20:37:57,141 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskEventDispatcher
+2014-03-27 20:37:57,142 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskAttemptEventDispatcher
+2014-03-27 20:37:57,143 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventType for class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler
+2014-03-27 20:37:57,149 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.speculate.Speculator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$SpeculatorEventDispatcher
+2014-03-27 20:37:57,150 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.rm.ContainerAllocator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerAllocatorRouter
+2014-03-27 20:37:57,151 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncher$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerLauncherRouter
+2014-03-27 20:37:57,238 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobFinishEvent$Type for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobFinishEventHandler
+2014-03-27 20:37:57,465 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2014-03-27 20:37:57,509 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2014-03-27 20:37:57,510 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MRAppMaster metrics system started
+2014-03-27 20:37:57,516 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Adding job token for job_1395932805488_0001 to jobTokenSecretManager
+2014-03-27 20:37:57,631 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Not uberizing job_1395932805488_0001 because: not enabled;
+2014-03-27 20:37:57,645 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Input size for job job_1395932805488_0001 = 1573078. Number of splits = 1
+2014-03-27 20:37:57,647 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Number of reduces for job job_1395932805488_0001 = 1
+2014-03-27 20:37:57,647 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1395932805488_0001Job Transitioned from NEW to INITED
+2014-03-27 20:37:57,648 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: MRAppMaster launching normal, non-uberized, multi-container job job_1395932805488_0001.
+2014-03-27 20:37:57,693 INFO [Socket Reader #1 for port 6424] org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 6424
+2014-03-27 20:37:57,720 INFO [main] org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.mapreduce.v2.api.MRClientProtocolPB to the server
+2014-03-27 20:37:57,721 INFO [IPC Server listener on 6424] org.apache.hadoop.ipc.Server: IPC Server listener on 6424: starting
+2014-03-27 20:37:57,721 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2014-03-27 20:37:57,722 INFO [main] org.apache.hadoop.mapreduce.v2.app.client.MRClientService: Instantiated MRClientService at OmSkathi/172.16.16.89:6424
+2014-03-27 20:37:57,821 INFO [main] org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-03-27 20:37:57,826 INFO [main] org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.mapreduce is not defined
+2014-03-27 20:37:57,841 INFO [main] org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2014-03-27 20:37:57,845 INFO [main] org.apache.hadoop.http.HttpServer2: Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context mapreduce
+2014-03-27 20:37:57,845 INFO [main] org.apache.hadoop.http.HttpServer2: Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context static
+2014-03-27 20:37:57,848 INFO [main] org.apache.hadoop.http.HttpServer2: adding path spec: /mapreduce/*
+2014-03-27 20:37:57,848 INFO [main] org.apache.hadoop.http.HttpServer2: adding path spec: /ws/*
+2014-03-27 20:37:57,859 INFO [main] org.apache.hadoop.http.HttpServer2: Jetty bound to port 6432
+2014-03-27 20:37:57,859 INFO [main] org.mortbay.log: jetty-6.1.26
+2014-03-27 20:37:57,890 INFO [main] org.mortbay.log: Extract jar:file:/C:/hadoop-2.3.0/share/hadoop/yarn/hadoop-yarn-common-2.3.0.jar!/webapps/mapreduce to C:\Windows\TEMP\Jetty_0_0_0_0_6432_mapreduce____kqluxu\webapp
+2014-03-27 20:37:58,076 INFO [main] org.mortbay.log: Started SelectChannelConnector@0.0.0.0:6432
+2014-03-27 20:37:58,077 INFO [main] org.apache.hadoop.yarn.webapp.WebApps: Web app /mapreduce started at 6432
+2014-03-27 20:37:58,411 INFO [main] org.apache.hadoop.yarn.webapp.WebApps: Registered webapp guice modules
+2014-03-27 20:37:58,415 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: JOB_CREATE job_1395932805488_0001
+2014-03-27 20:37:58,419 INFO [Socket Reader #1 for port 6435] org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 6435
+2014-03-27 20:37:58,424 INFO [IPC Server listener on 6435] org.apache.hadoop.ipc.Server: IPC Server listener on 6435: starting
+2014-03-27 20:37:58,424 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2014-03-27 20:37:58,445 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: nodeBlacklistingEnabled:true
+2014-03-27 20:37:58,445 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: maxTaskFailuresPerNode is 3
+2014-03-27 20:37:58,445 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: blacklistDisablePercent is 33
+2014-03-27 20:37:58,501 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-03-27 20:37:58,501 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-03-27 20:37:58,508 INFO [main] org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8030
+2014-03-27 20:37:58,646 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: maxContainerCapability: 8192
+2014-03-27 20:37:58,650 INFO [main] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Upper limit on the thread pool size is 500
+2014-03-27 20:37:58,654 INFO [main] org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy: yarn.client.max-nodemanagers-proxies : 500
+2014-03-27 20:37:58,663 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1395932805488_0001Job Transitioned from INITED to SETUP
+2014-03-27 20:37:58,667 INFO [CommitterEvent Processor #0] org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler: Processing the event EventType: JOB_SETUP
+2014-03-27 20:37:58,707 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1395932805488_0001Job Transitioned from SETUP to RUNNING
+2014-03-27 20:37:58,729 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved OmSkathi to /default-rack
+2014-03-27 20:37:58,732 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395932805488_0001_m_000000 Task Transitioned from NEW to SCHEDULED
+2014-03-27 20:37:58,733 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395932805488_0001_r_000000 Task Transitioned from NEW to SCHEDULED
+2014-03-27 20:37:58,735 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-03-27 20:37:58,735 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_r_000000_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-03-27 20:37:58,738 INFO [Thread-49] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: mapResourceReqt:1024
+2014-03-27 20:37:58,749 INFO [Thread-49] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: reduceResourceReqt:1024
+2014-03-27 20:37:58,846 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Event Writer setup for JobId: job_1395932805488_0001, File: hdfs://localhost:9000/tmp/hadoop-yarn/staging/PrabaKarthi/.staging/job_1395932805488_0001/job_1395932805488_0001_1.jhist
+2014-03-27 20:37:59,648 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:1 ScheduledMaps:1 ScheduledReds:0 AssignedMaps:0 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:0 ContRel:0 HostLocal:0 RackLocal:0
+2014-03-27 20:37:59,693 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1395932805488_0001: ask=3 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:6144, vCores:0> knownNMs=1
+2014-03-27 20:37:59,693 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=6144
+2014-03-27 20:37:59,693 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2014-03-27 20:38:00,706 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Got allocated containers 1
+2014-03-27 20:38:00,707 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1395932805488_0001_01_000002 to attempt_1395932805488_0001_m_000000_0
+2014-03-27 20:38:00,710 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=5120
+2014-03-27 20:38:00,710 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2014-03-27 20:38:00,711 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:1 ContRel:0 HostLocal:1 RackLocal:0
+2014-03-27 20:38:00,750 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved OmSkathi to /default-rack
+2014-03-27 20:38:00,767 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: The job-jar file on the remote FS is hdfs://localhost:9000/tmp/hadoop-yarn/staging/PrabaKarthi/.staging/job_1395932805488_0001/job.jar
+2014-03-27 20:38:00,771 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: The job-conf file on the remote FS is /tmp/hadoop-yarn/staging/PrabaKarthi/.staging/job_1395932805488_0001/job.xml
+2014-03-27 20:38:00,772 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Adding #0 tokens and #1 secret keys for NM use for launching container
+2014-03-27 20:38:00,772 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Size of containertokens_dob is 1
+2014-03-27 20:38:00,772 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Putting shuffle token in serviceData
+2014-03-27 20:38:00,794 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-03-27 20:38:00,798 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1395932805488_0001_01_000002 taskAttempt attempt_1395932805488_0001_m_000000_0
+2014-03-27 20:38:00,800 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1395932805488_0001_m_000000_0
+2014-03-27 20:38:00,801 INFO [ContainerLauncher #0] org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy: Opening proxy : OmSkathi:6371
+2014-03-27 20:38:00,853 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1395932805488_0001_m_000000_0 : 13562
+2014-03-27 20:38:00,855 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1395932805488_0001_m_000000_0] using containerId: [container_1395932805488_0001_01_000002 on NM: [OmSkathi:6371]
+2014-03-27 20:38:00,858 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-03-27 20:38:00,859 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1395932805488_0001_m_000000
+2014-03-27 20:38:00,859 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395932805488_0001_m_000000 Task Transitioned from SCHEDULED to RUNNING
+2014-03-27 20:38:01,714 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1395932805488_0001: ask=3 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:5120, vCores:-1> knownNMs=1
+2014-03-27 20:38:03,191 INFO [Socket Reader #1 for port 6435] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1395932805488_0001 (auth:SIMPLE)
+2014-03-27 20:38:03,209 INFO [IPC Server handler 1 on 6435] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1395932805488_0001_m_000002 asked for a task
+2014-03-27 20:38:03,209 INFO [IPC Server handler 1 on 6435] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1395932805488_0001_m_000002 given task: attempt_1395932805488_0001_m_000000_0
+2014-03-27 20:38:05,035 FATAL [IPC Server handler 2 on 6435] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1395932805488_0001_m_000000_0 - exited : java.lang.ClassNotFoundException: com.google.gson.Gson
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at Recipe$TokenizerMapper.map(Recipe.java:31)
+	at Recipe$TokenizerMapper.map(Recipe.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:340)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:168)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:163)
+
+2014-03-27 20:38:05,035 INFO [IPC Server handler 2 on 6435] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1395932805488_0001_m_000000_0: Error: java.lang.ClassNotFoundException: com.google.gson.Gson
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at Recipe$TokenizerMapper.map(Recipe.java:31)
+	at Recipe$TokenizerMapper.map(Recipe.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:340)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:168)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:163)
+
+2014-03-27 20:38:05,037 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1395932805488_0001_m_000000_0: Error: java.lang.ClassNotFoundException: com.google.gson.Gson
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at Recipe$TokenizerMapper.map(Recipe.java:31)
+	at Recipe$TokenizerMapper.map(Recipe.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:340)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:168)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:163)
+
+2014-03-27 20:38:05,042 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_0 TaskAttempt Transitioned from RUNNING to FAIL_CONTAINER_CLEANUP
+2014-03-27 20:38:05,043 INFO [ContainerLauncher #1] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1395932805488_0001_01_000002 taskAttempt attempt_1395932805488_0001_m_000000_0
+2014-03-27 20:38:05,043 INFO [ContainerLauncher #1] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: KILLING attempt_1395932805488_0001_m_000000_0
+2014-03-27 20:38:05,065 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_0 TaskAttempt Transitioned from FAIL_CONTAINER_CLEANUP to FAIL_TASK_CLEANUP
+2014-03-27 20:38:05,066 INFO [CommitterEvent Processor #1] org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler: Processing the event EventType: TASK_ABORT
+2014-03-27 20:38:05,080 WARN [CommitterEvent Processor #1] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Could not delete hdfs://localhost:9000/ouput/_temporary/1/_temporary/attempt_1395932805488_0001_m_000000_0
+2014-03-27 20:38:05,081 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_0 TaskAttempt Transitioned from FAIL_TASK_CLEANUP to FAILED
+2014-03-27 20:38:05,093 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved OmSkathi to /default-rack
+2014-03-27 20:38:05,093 INFO [Thread-49] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: 1 failures on node OmSkathi
+2014-03-27 20:38:05,096 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_1 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-03-27 20:38:05,097 INFO [Thread-49] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Added attempt_1395932805488_0001_m_000000_1 to list of failed maps
+2014-03-27 20:38:05,722 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:1 ScheduledMaps:1 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:1 ContRel:0 HostLocal:1 RackLocal:0
+2014-03-27 20:38:05,725 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1395932805488_0001: ask=1 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:5120, vCores:-1> knownNMs=1
+2014-03-27 20:38:05,726 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=5120
+2014-03-27 20:38:05,726 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2014-03-27 20:38:06,734 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Received completed container container_1395932805488_0001_01_000002
+2014-03-27 20:38:06,734 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Got allocated containers 1
+2014-03-27 20:38:06,734 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1395932805488_0001_m_000000_0: Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 137
+Container exited with a non-zero exit code 137
+
+2014-03-27 20:38:06,735 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigning container Container: [ContainerId: container_1395932805488_0001_01_000003, NodeId: OmSkathi:6371, NodeHttpAddress: OmSkathi:8042, Resource: <memory:1024, vCores:1>, Priority: 5, Token: Token { kind: ContainerToken, service: 172.16.16.89:6371 }, ] to fast fail map
+2014-03-27 20:38:06,735 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned from earlierFailedMaps
+2014-03-27 20:38:06,735 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1395932805488_0001_01_000003 to attempt_1395932805488_0001_m_000000_1
+2014-03-27 20:38:06,735 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=5120
+2014-03-27 20:38:06,735 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2014-03-27 20:38:06,735 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:2 ContRel:0 HostLocal:1 RackLocal:0
+2014-03-27 20:38:06,735 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved OmSkathi to /default-rack
+2014-03-27 20:38:06,736 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_1 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-03-27 20:38:06,737 INFO [ContainerLauncher #2] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1395932805488_0001_01_000003 taskAttempt attempt_1395932805488_0001_m_000000_1
+2014-03-27 20:38:06,737 INFO [ContainerLauncher #2] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1395932805488_0001_m_000000_1
+2014-03-27 20:38:06,741 INFO [ContainerLauncher #2] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1395932805488_0001_m_000000_1 : 13562
+2014-03-27 20:38:06,741 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1395932805488_0001_m_000000_1] using containerId: [container_1395932805488_0001_01_000003 on NM: [OmSkathi:6371]
+2014-03-27 20:38:06,742 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_1 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-03-27 20:38:06,742 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1395932805488_0001_m_000000
+2014-03-27 20:38:07,738 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1395932805488_0001: ask=1 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:5120, vCores:-1> knownNMs=1
+2014-03-27 20:38:08,966 INFO [Socket Reader #1 for port 6435] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1395932805488_0001 (auth:SIMPLE)
+2014-03-27 20:38:08,978 INFO [IPC Server handler 5 on 6435] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1395932805488_0001_m_000003 asked for a task
+2014-03-27 20:38:08,978 INFO [IPC Server handler 5 on 6435] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1395932805488_0001_m_000003 given task: attempt_1395932805488_0001_m_000000_1
+2014-03-27 20:38:10,591 FATAL [IPC Server handler 7 on 6435] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1395932805488_0001_m_000000_1 - exited : java.lang.ClassNotFoundException: com.google.gson.Gson
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at Recipe$TokenizerMapper.map(Recipe.java:31)
+	at Recipe$TokenizerMapper.map(Recipe.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:340)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:168)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:163)
+
+2014-03-27 20:38:10,591 INFO [IPC Server handler 7 on 6435] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1395932805488_0001_m_000000_1: Error: java.lang.ClassNotFoundException: com.google.gson.Gson
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at Recipe$TokenizerMapper.map(Recipe.java:31)
+	at Recipe$TokenizerMapper.map(Recipe.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:340)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:168)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:163)
+
+2014-03-27 20:38:10,594 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1395932805488_0001_m_000000_1: Error: java.lang.ClassNotFoundException: com.google.gson.Gson
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at Recipe$TokenizerMapper.map(Recipe.java:31)
+	at Recipe$TokenizerMapper.map(Recipe.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:340)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:168)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:163)
+
+2014-03-27 20:38:10,595 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_1 TaskAttempt Transitioned from RUNNING to FAIL_CONTAINER_CLEANUP
+2014-03-27 20:38:10,596 INFO [ContainerLauncher #3] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1395932805488_0001_01_000003 taskAttempt attempt_1395932805488_0001_m_000000_1
+2014-03-27 20:38:10,596 INFO [ContainerLauncher #3] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: KILLING attempt_1395932805488_0001_m_000000_1
+2014-03-27 20:38:10,615 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_1 TaskAttempt Transitioned from FAIL_CONTAINER_CLEANUP to FAIL_TASK_CLEANUP
+2014-03-27 20:38:10,616 INFO [CommitterEvent Processor #2] org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler: Processing the event EventType: TASK_ABORT
+2014-03-27 20:38:10,619 WARN [CommitterEvent Processor #2] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Could not delete hdfs://localhost:9000/ouput/_temporary/1/_temporary/attempt_1395932805488_0001_m_000000_1
+2014-03-27 20:38:10,619 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_1 TaskAttempt Transitioned from FAIL_TASK_CLEANUP to FAILED
+2014-03-27 20:38:10,620 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved OmSkathi to /default-rack
+2014-03-27 20:38:10,620 INFO [Thread-49] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: 2 failures on node OmSkathi
+2014-03-27 20:38:10,620 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_2 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-03-27 20:38:10,620 INFO [Thread-49] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Added attempt_1395932805488_0001_m_000000_2 to list of failed maps
+2014-03-27 20:38:10,740 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:1 ScheduledMaps:1 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:2 ContRel:0 HostLocal:1 RackLocal:0
+2014-03-27 20:38:10,742 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1395932805488_0001: ask=1 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:5120, vCores:-1> knownNMs=1
+2014-03-27 20:38:10,742 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=5120
+2014-03-27 20:38:10,742 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2014-03-27 20:38:11,745 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Received completed container container_1395932805488_0001_01_000003
+2014-03-27 20:38:11,745 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Got allocated containers 1
+2014-03-27 20:38:11,745 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1395932805488_0001_m_000000_1: Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 137
+Container exited with a non-zero exit code 137
+
+2014-03-27 20:38:11,745 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigning container Container: [ContainerId: container_1395932805488_0001_01_000004, NodeId: OmSkathi:6371, NodeHttpAddress: OmSkathi:8042, Resource: <memory:1024, vCores:1>, Priority: 5, Token: Token { kind: ContainerToken, service: 172.16.16.89:6371 }, ] to fast fail map
+2014-03-27 20:38:11,745 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned from earlierFailedMaps
+2014-03-27 20:38:11,745 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1395932805488_0001_01_000004 to attempt_1395932805488_0001_m_000000_2
+2014-03-27 20:38:11,746 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=5120
+2014-03-27 20:38:11,746 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2014-03-27 20:38:11,746 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:3 ContRel:0 HostLocal:1 RackLocal:0
+2014-03-27 20:38:11,746 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved OmSkathi to /default-rack
+2014-03-27 20:38:11,746 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_2 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-03-27 20:38:11,747 INFO [ContainerLauncher #4] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1395932805488_0001_01_000004 taskAttempt attempt_1395932805488_0001_m_000000_2
+2014-03-27 20:38:11,747 INFO [ContainerLauncher #4] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1395932805488_0001_m_000000_2
+2014-03-27 20:38:11,751 INFO [ContainerLauncher #4] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1395932805488_0001_m_000000_2 : 13562
+2014-03-27 20:38:11,752 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1395932805488_0001_m_000000_2] using containerId: [container_1395932805488_0001_01_000004 on NM: [OmSkathi:6371]
+2014-03-27 20:38:11,752 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_2 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-03-27 20:38:11,753 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1395932805488_0001_m_000000
+2014-03-27 20:38:12,749 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1395932805488_0001: ask=1 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:5120, vCores:-1> knownNMs=1
+2014-03-27 20:38:14,055 INFO [Socket Reader #1 for port 6435] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1395932805488_0001 (auth:SIMPLE)
+2014-03-27 20:38:14,068 INFO [IPC Server handler 0 on 6435] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1395932805488_0001_m_000004 asked for a task
+2014-03-27 20:38:14,069 INFO [IPC Server handler 0 on 6435] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1395932805488_0001_m_000004 given task: attempt_1395932805488_0001_m_000000_2
+2014-03-27 20:38:15,765 FATAL [IPC Server handler 4 on 6435] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1395932805488_0001_m_000000_2 - exited : java.lang.ClassNotFoundException: com.google.gson.Gson
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at Recipe$TokenizerMapper.map(Recipe.java:31)
+	at Recipe$TokenizerMapper.map(Recipe.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:340)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:168)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:163)
+
+2014-03-27 20:38:15,765 INFO [IPC Server handler 4 on 6435] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1395932805488_0001_m_000000_2: Error: java.lang.ClassNotFoundException: com.google.gson.Gson
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at Recipe$TokenizerMapper.map(Recipe.java:31)
+	at Recipe$TokenizerMapper.map(Recipe.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:340)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:168)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:163)
+
+2014-03-27 20:38:15,766 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1395932805488_0001_m_000000_2: Error: java.lang.ClassNotFoundException: com.google.gson.Gson
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at Recipe$TokenizerMapper.map(Recipe.java:31)
+	at Recipe$TokenizerMapper.map(Recipe.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:340)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:168)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:163)
+
+2014-03-27 20:38:15,767 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_2 TaskAttempt Transitioned from RUNNING to FAIL_CONTAINER_CLEANUP
+2014-03-27 20:38:15,768 INFO [ContainerLauncher #5] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1395932805488_0001_01_000004 taskAttempt attempt_1395932805488_0001_m_000000_2
+2014-03-27 20:38:15,769 INFO [ContainerLauncher #5] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: KILLING attempt_1395932805488_0001_m_000000_2
+2014-03-27 20:38:15,772 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_2 TaskAttempt Transitioned from FAIL_CONTAINER_CLEANUP to FAIL_TASK_CLEANUP
+2014-03-27 20:38:15,773 INFO [CommitterEvent Processor #3] org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler: Processing the event EventType: TASK_ABORT
+2014-03-27 20:38:15,779 WARN [CommitterEvent Processor #3] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Could not delete hdfs://localhost:9000/ouput/_temporary/1/_temporary/attempt_1395932805488_0001_m_000000_2
+2014-03-27 20:38:15,779 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_2 TaskAttempt Transitioned from FAIL_TASK_CLEANUP to FAILED
+2014-03-27 20:38:15,780 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved OmSkathi to /default-rack
+2014-03-27 20:38:15,780 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_3 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-03-27 20:38:15,780 INFO [Thread-49] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: 3 failures on node OmSkathi
+2014-03-27 20:38:15,780 INFO [Thread-49] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: Blacklisted host OmSkathi
+2014-03-27 20:38:15,780 INFO [Thread-49] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Added attempt_1395932805488_0001_m_000000_3 to list of failed maps
+2014-03-27 20:38:16,776 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:1 ScheduledMaps:1 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:3 ContRel:0 HostLocal:1 RackLocal:0
+2014-03-27 20:38:16,781 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1395932805488_0001: ask=1 release= 0 newContainers=0 finishedContainers=1 resourcelimit=<memory:5120, vCores:-1> knownNMs=1
+2014-03-27 20:38:16,781 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: Update the blacklist for application_1395932805488_0001: blacklistAdditions=1 blacklistRemovals=0
+2014-03-27 20:38:16,781 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: Ignore blacklisting set to true. Known: 1, Blacklisted: 1, 100%
+2014-03-27 20:38:16,781 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Received completed container container_1395932805488_0001_01_000004
+2014-03-27 20:38:16,781 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=5120
+2014-03-27 20:38:16,781 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2014-03-27 20:38:16,781 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1395932805488_0001_m_000000_2: Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 137
+Container exited with a non-zero exit code 137
+
+2014-03-27 20:38:16,781 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:1 ScheduledReds:0 AssignedMaps:0 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:3 ContRel:0 HostLocal:1 RackLocal:0
+2014-03-27 20:38:17,783 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: Update the blacklist for application_1395932805488_0001: blacklistAdditions=0 blacklistRemovals=1
+2014-03-27 20:38:17,783 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=5120
+2014-03-27 20:38:17,783 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2014-03-27 20:38:18,787 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Got allocated containers 1
+2014-03-27 20:38:18,787 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigning container Container: [ContainerId: container_1395932805488_0001_01_000005, NodeId: OmSkathi:6371, NodeHttpAddress: OmSkathi:8042, Resource: <memory:1024, vCores:1>, Priority: 5, Token: Token { kind: ContainerToken, service: 172.16.16.89:6371 }, ] to fast fail map
+2014-03-27 20:38:18,787 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned from earlierFailedMaps
+2014-03-27 20:38:18,788 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1395932805488_0001_01_000005 to attempt_1395932805488_0001_m_000000_3
+2014-03-27 20:38:18,788 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=5120
+2014-03-27 20:38:18,788 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2014-03-27 20:38:18,788 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:4 ContRel:0 HostLocal:1 RackLocal:0
+2014-03-27 20:38:18,788 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved OmSkathi to /default-rack
+2014-03-27 20:38:18,789 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_3 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-03-27 20:38:18,789 INFO [ContainerLauncher #6] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1395932805488_0001_01_000005 taskAttempt attempt_1395932805488_0001_m_000000_3
+2014-03-27 20:38:18,789 INFO [ContainerLauncher #6] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1395932805488_0001_m_000000_3
+2014-03-27 20:38:18,795 INFO [ContainerLauncher #6] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1395932805488_0001_m_000000_3 : 13562
+2014-03-27 20:38:18,795 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1395932805488_0001_m_000000_3] using containerId: [container_1395932805488_0001_01_000005 on NM: [OmSkathi:6371]
+2014-03-27 20:38:18,796 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_3 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-03-27 20:38:18,796 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1395932805488_0001_m_000000
+2014-03-27 20:38:19,791 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1395932805488_0001: ask=1 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:5120, vCores:-1> knownNMs=1
+2014-03-27 20:38:21,080 INFO [Socket Reader #1 for port 6435] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1395932805488_0001 (auth:SIMPLE)
+2014-03-27 20:38:21,093 INFO [IPC Server handler 3 on 6435] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1395932805488_0001_m_000005 asked for a task
+2014-03-27 20:38:21,093 INFO [IPC Server handler 3 on 6435] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1395932805488_0001_m_000005 given task: attempt_1395932805488_0001_m_000000_3
+2014-03-27 20:38:22,708 FATAL [IPC Server handler 6 on 6435] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1395932805488_0001_m_000000_3 - exited : java.lang.ClassNotFoundException: com.google.gson.Gson
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at Recipe$TokenizerMapper.map(Recipe.java:31)
+	at Recipe$TokenizerMapper.map(Recipe.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:340)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:168)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:163)
+
+2014-03-27 20:38:22,708 INFO [IPC Server handler 6 on 6435] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1395932805488_0001_m_000000_3: Error: java.lang.ClassNotFoundException: com.google.gson.Gson
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at Recipe$TokenizerMapper.map(Recipe.java:31)
+	at Recipe$TokenizerMapper.map(Recipe.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:340)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:168)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:163)
+
+2014-03-27 20:38:22,709 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1395932805488_0001_m_000000_3: Error: java.lang.ClassNotFoundException: com.google.gson.Gson
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at Recipe$TokenizerMapper.map(Recipe.java:31)
+	at Recipe$TokenizerMapper.map(Recipe.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:340)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:168)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:163)
+
+2014-03-27 20:38:22,709 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_3 TaskAttempt Transitioned from RUNNING to FAIL_CONTAINER_CLEANUP
+2014-03-27 20:38:22,711 INFO [ContainerLauncher #7] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container container_1395932805488_0001_01_000005 taskAttempt attempt_1395932805488_0001_m_000000_3
+2014-03-27 20:38:22,711 INFO [ContainerLauncher #7] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: KILLING attempt_1395932805488_0001_m_000000_3
+2014-03-27 20:38:22,715 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_3 TaskAttempt Transitioned from FAIL_CONTAINER_CLEANUP to FAIL_TASK_CLEANUP
+2014-03-27 20:38:22,717 INFO [CommitterEvent Processor #4] org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler: Processing the event EventType: TASK_ABORT
+2014-03-27 20:38:22,720 WARN [CommitterEvent Processor #4] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Could not delete hdfs://localhost:9000/ouput/_temporary/1/_temporary/attempt_1395932805488_0001_m_000000_3
+2014-03-27 20:38:22,720 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_m_000000_3 TaskAttempt Transitioned from FAIL_TASK_CLEANUP to FAILED
+2014-03-27 20:38:22,723 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395932805488_0001_m_000000 Task Transitioned from RUNNING to FAILED
+2014-03-27 20:38:22,724 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Num completed Tasks: 1
+2014-03-27 20:38:22,724 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Job failed as tasks failed. failedMaps:1 failedReduces:0
+2014-03-27 20:38:22,725 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1395932805488_0001Job Transitioned from RUNNING to FAIL_WAIT
+2014-03-27 20:38:22,726 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395932805488_0001_r_000000 Task Transitioned from SCHEDULED to KILL_WAIT
+2014-03-27 20:38:22,726 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395932805488_0001_r_000000_0 TaskAttempt Transitioned from UNASSIGNED to KILLED
+2014-03-27 20:38:22,726 INFO [Thread-49] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Processing the event EventType: CONTAINER_DEALLOCATE
+2014-03-27 20:38:22,726 ERROR [Thread-49] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Could not deallocate container for task attemptId attempt_1395932805488_0001_r_000000_0
+2014-03-27 20:38:22,726 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395932805488_0001_r_000000 Task Transitioned from KILL_WAIT to KILLED
+2014-03-27 20:38:22,727 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1395932805488_0001Job Transitioned from FAIL_WAIT to FAIL_ABORT
+2014-03-27 20:38:22,727 INFO [CommitterEvent Processor #0] org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler: Processing the event EventType: JOB_ABORT
+2014-03-27 20:38:22,795 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:1 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:4 ContRel:0 HostLocal:1 RackLocal:0
+2014-03-27 20:38:22,797 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=5120
+2014-03-27 20:38:22,797 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold reached. Scheduling reduces.
+2014-03-27 20:38:22,797 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: All maps assigned. Ramping up all remaining reduces:1
+2014-03-27 20:38:22,797 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:1 AssignedMaps:1 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:4 ContRel:0 HostLocal:1 RackLocal:0
+2014-03-27 20:38:22,896 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1395932805488_0001Job Transitioned from FAIL_ABORT to FAILED
+2014-03-27 20:38:22,897 INFO [Thread-60] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: We are finishing cleanly so this is the last retry
+2014-03-27 20:38:22,897 INFO [Thread-60] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Notify RMCommunicator isAMLastRetry: true
+2014-03-27 20:38:22,897 INFO [Thread-60] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: RMCommunicator notified that shouldUnregistered is: true
+2014-03-27 20:38:22,897 INFO [Thread-60] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Notify JHEH isAMLastRetry: true
+2014-03-27 20:38:22,897 INFO [Thread-60] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: JobHistoryEventHandler notified that forceJobCompletion is true
+2014-03-27 20:38:22,897 INFO [Thread-60] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Calling stop for all the services
+2014-03-27 20:38:22,898 INFO [Thread-60] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Stopping JobHistoryEventHandler. Size of the outstanding queue size is 0
+2014-03-27 20:38:23,601 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copying hdfs://localhost:9000/tmp/hadoop-yarn/staging/PrabaKarthi/.staging/job_1395932805488_0001/job_1395932805488_0001_1.jhist to hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/PrabaKarthi/job_1395932805488_0001-1395932869540-PrabaKarthi-Recipe-1395932902724-0-0-FAILED-default-1395932878656.jhist_tmp
+2014-03-27 20:38:23,800 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1395932805488_0001: ask=1 release= 0 newContainers=0 finishedContainers=1 resourcelimit=<memory:5120, vCores:-1> knownNMs=1
+2014-03-27 20:38:23,800 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Received completed container container_1395932805488_0001_01_000005
+2014-03-27 20:38:23,800 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:1 AssignedMaps:0 AssignedReds:0 CompletedMaps:1 CompletedReds:0 ContAlloc:4 ContRel:0 HostLocal:1 RackLocal:0
+2014-03-27 20:38:23,800 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1395932805488_0001_m_000000_3: Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 137
+Container exited with a non-zero exit code 137
+
+2014-03-27 20:38:24,334 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copied to done location: hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/PrabaKarthi/job_1395932805488_0001-1395932869540-PrabaKarthi-Recipe-1395932902724-0-0-FAILED-default-1395932878656.jhist_tmp
+2014-03-27 20:38:24,422 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copying hdfs://localhost:9000/tmp/hadoop-yarn/staging/PrabaKarthi/.staging/job_1395932805488_0001/job_1395932805488_0001_1_conf.xml to hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/PrabaKarthi/job_1395932805488_0001_conf.xml_tmp
+2014-03-27 20:38:24,463 INFO [Socket Reader #1 for port 6424] org.apache.hadoop.ipc.Server: Socket Reader #1 for port 6424: readAndProcess from client 172.16.16.89 threw exception [java.io.IOException: An existing connection was forcibly closed by the remote host]
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:25)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:198)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:171)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:243)
+	at org.apache.hadoop.ipc.Server.channelRead(Server.java:2502)
+	at org.apache.hadoop.ipc.Server.access$2800(Server.java:124)
+	at org.apache.hadoop.ipc.Server$Connection.readAndProcess(Server.java:1410)
+	at org.apache.hadoop.ipc.Server$Listener.doRead(Server.java:708)
+	at org.apache.hadoop.ipc.Server$Listener$Reader.doRunLoop(Server.java:582)
+	at org.apache.hadoop.ipc.Server$Listener$Reader.run(Server.java:553)
+2014-03-27 20:38:24,803 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Got allocated containers 1
+2014-03-27 20:38:24,803 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned to reduce
+2014-03-27 20:38:24,803 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1395932805488_0001_01_000006 to attempt_1395932805488_0001_r_000000_0
+2014-03-27 20:38:24,803 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:0 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:0 AssignedReds:1 CompletedMaps:1 CompletedReds:0 ContAlloc:5 ContRel:0 HostLocal:1 RackLocal:0
+2014-03-27 20:38:24,897 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copied to done location: hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/PrabaKarthi/job_1395932805488_0001_conf.xml_tmp
+2014-03-27 20:38:25,136 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Moved tmp to done: hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/PrabaKarthi/job_1395932805488_0001.summary_tmp to hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/PrabaKarthi/job_1395932805488_0001.summary
+2014-03-27 20:38:25,281 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Moved tmp to done: hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/PrabaKarthi/job_1395932805488_0001_conf.xml_tmp to hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/PrabaKarthi/job_1395932805488_0001_conf.xml
+2014-03-27 20:38:25,358 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Moved tmp to done: hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/PrabaKarthi/job_1395932805488_0001-1395932869540-PrabaKarthi-Recipe-1395932902724-0-0-FAILED-default-1395932878656.jhist_tmp to hdfs://localhost:9000/tmp/hadoop-yarn/staging/history/done_intermediate/PrabaKarthi/job_1395932805488_0001-1395932869540-PrabaKarthi-Recipe-1395932902724-0-0-FAILED-default-1395932878656.jhist
+2014-03-27 20:38:25,359 INFO [Thread-60] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Stopped JobHistoryEventHandler. super.stop()
+2014-03-27 20:38:25,361 INFO [Thread-60] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Setting job diagnostics to Task failed task_1395932805488_0001_m_000000
+Job failed as tasks failed. failedMaps:1 failedReduces:0
+
+2014-03-27 20:38:25,363 INFO [Thread-60] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: History url is http://OmSkathi:19888/jobhistory/job/job_1395932805488_0001
+2014-03-27 20:38:25,379 INFO [Thread-60] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Waiting for application to be successfully unregistered.
+2014-03-27 20:38:26,380 INFO [Thread-60] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Final Stats: PendingReds:0 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:0 AssignedReds:1 CompletedMaps:1 CompletedReds:0 ContAlloc:5 ContRel:0 HostLocal:1 RackLocal:0
+2014-03-27 20:38:26,381 INFO [Thread-60] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Deleting staging directory hdfs://localhost:9000 /tmp/hadoop-yarn/staging/PrabaKarthi/.staging/job_1395932805488_0001
+2014-03-27 20:38:26,868 INFO [Thread-60] org.apache.hadoop.ipc.Server: Stopping server on 6435
+2014-03-27 20:38:26,870 INFO [IPC Server listener on 6435] org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 6435
+2014-03-27 20:38:26,870 INFO [TaskHeartbeatHandler PingChecker] org.apache.hadoop.mapreduce.v2.app.TaskHeartbeatHandler: TaskHeartbeatHandler thread interrupted
+2014-03-27 20:38:26,870 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: Stopping IPC Server Responder

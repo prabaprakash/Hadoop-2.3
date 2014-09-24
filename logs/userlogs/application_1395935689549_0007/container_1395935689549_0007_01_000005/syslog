@@ -1,0 +1,45 @@
+2014-03-27 21:56:51,684 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-03-27 21:56:51,687 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-03-27 21:56:51,865 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2014-03-27 21:56:51,924 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2014-03-27 21:56:51,924 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system started
+2014-03-27 21:56:51,936 INFO [main] org.apache.hadoop.mapred.YarnChild: Executing with tokens:
+2014-03-27 21:56:51,936 INFO [main] org.apache.hadoop.mapred.YarnChild: Kind: mapreduce.job, Service: job_1395935689549_0007, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@1389c036)
+2014-03-27 21:56:52,018 INFO [main] org.apache.hadoop.mapred.YarnChild: Sleeping for 0ms before retrying again. Got null now.
+2014-03-27 21:56:52,377 INFO [main] org.apache.hadoop.mapred.YarnChild: mapreduce.cluster.local.dir for child: /tmp/hadoop-PrabaKarthi/nm-local-dir/usercache/PrabaKarthi/appcache/application_1395935689549_0007
+2014-03-27 21:56:52,606 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-03-27 21:56:52,607 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-03-27 21:56:52,951 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-03-27 21:56:53,344 INFO [main] org.apache.hadoop.yarn.util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+2014-03-27 21:56:53,667 INFO [main] org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@620e06ce
+2014-03-27 21:56:53,999 INFO [main] org.apache.hadoop.mapred.MapTask: Processing split: hdfs://localhost:9000/in/recipeitems-latest.json:0+119406636
+2014-03-27 21:56:54,013 INFO [main] org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2014-03-27 21:56:54,065 INFO [main] org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2014-03-27 21:56:54,065 INFO [main] org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2014-03-27 21:56:54,066 INFO [main] org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2014-03-27 21:56:54,066 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2014-03-27 21:56:54,066 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2014-03-27 21:56:54,113 INFO [main] org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2014-03-27 21:56:54,114 INFO [main] org.apache.hadoop.mapred.MapTask: Spilling map output
+2014-03-27 21:56:54,114 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 245; bufvoid = 104857600
+2014-03-27 21:56:54,114 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214300(104857200); length = 97/6553600
+2014-03-27 21:56:54,138 INFO [main] org.apache.hadoop.mapred.MapTask: Finished spill 0
+2014-03-27 21:56:54,152 WARN [main] org.apache.hadoop.mapred.YarnChild: Exception running child : java.lang.NullPointerException
+	at org.apache.hadoop.io.Text.encode(Text.java:443)
+	at org.apache.hadoop.io.Text.set(Text.java:198)
+	at Recipe$TokenizerMapper.map(Recipe.java:33)
+	at Recipe$TokenizerMapper.map(Recipe.java:17)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:340)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:168)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:163)
+
+2014-03-27 21:56:54,158 INFO [main] org.apache.hadoop.mapred.Task: Runnning cleanup for the task
+2014-03-27 21:56:54,164 WARN [main] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Could not delete hdfs://localhost:9000/out/_temporary/1/_temporary/attempt_1395935689549_0007_m_000000_3
+2014-03-27 21:56:54,268 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping MapTask metrics system...
+2014-03-27 21:56:54,268 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system stopped.
+2014-03-27 21:56:54,268 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system shutdown complete.

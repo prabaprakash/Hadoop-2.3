@@ -1,0 +1,31 @@
+2014-03-27 19:48:03,994 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-03-27 19:48:03,997 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-03-27 19:48:04,136 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2014-03-27 19:48:04,192 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2014-03-27 19:48:04,192 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system started
+2014-03-27 19:48:04,203 INFO [main] org.apache.hadoop.mapred.YarnChild: Executing with tokens:
+2014-03-27 19:48:04,203 INFO [main] org.apache.hadoop.mapred.YarnChild: Kind: mapreduce.job, Service: job_1395926949023_0011, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@38aa233f)
+2014-03-27 19:48:04,273 INFO [main] org.apache.hadoop.mapred.YarnChild: Sleeping for 0ms before retrying again. Got null now.
+2014-03-27 19:48:04,546 INFO [main] org.apache.hadoop.mapred.YarnChild: mapreduce.cluster.local.dir for child: /tmp/hadoop-PrabaKarthi/nm-local-dir/usercache/PrabaKarthi/appcache/application_1395926949023_0011
+2014-03-27 19:48:04,710 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-03-27 19:48:04,711 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-03-27 19:48:05,052 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-03-27 19:48:05,402 INFO [main] org.apache.hadoop.yarn.util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+2014-03-27 19:48:05,417 INFO [main] org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@530d0eae
+2014-03-27 19:48:05,433 WARN [main] org.apache.hadoop.mapred.YarnChild: Exception running child : java.lang.RuntimeException: java.lang.ClassNotFoundException: Class Recipe$TokenizerMapper not found
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:1882)
+	at org.apache.hadoop.mapreduce.task.JobContextImpl.getMapperClass(JobContextImpl.java:186)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:722)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:340)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:168)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:163)
+Caused by: java.lang.ClassNotFoundException: Class Recipe$TokenizerMapper not found
+	at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:1788)
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:1880)
+	... 8 more
+
+2014-03-27 19:48:05,436 INFO [main] org.apache.hadoop.mapred.Task: Runnning cleanup for the task
+2014-03-27 19:48:05,448 WARN [main] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Could not delete hdfs://localhost:9000/out/_temporary/1/_temporary/attempt_1395926949023_0011_m_000000_3

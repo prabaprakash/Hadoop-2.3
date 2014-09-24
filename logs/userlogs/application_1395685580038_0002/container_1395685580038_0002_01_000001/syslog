@@ -1,0 +1,243 @@
+2014-03-25 00:01:05,962 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Created MRAppMaster for application appattempt_1395685580038_0002_000001
+2014-03-25 00:01:06,346 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-03-25 00:01:06,347 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-03-25 00:01:06,493 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Executing with tokens:
+2014-03-25 00:01:06,493 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Kind: YARN_AM_RM_TOKEN, Service: , Ident: (org.apache.hadoop.yarn.security.AMRMTokenIdentifier@62c3e9e9)
+2014-03-25 00:01:06,544 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: The specific max attempts: 2 for application: 2. Attempt num: 1 is last retry: false
+2014-03-25 00:01:06,554 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Using mapred newApiCommitter.
+2014-03-25 00:01:06,687 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-03-25 00:01:06,687 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-03-25 00:01:07,295 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: OutputCommitter set in config null
+2014-03-25 00:01:07,357 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2014-03-25 00:01:07,381 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.jobhistory.EventType for class org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler
+2014-03-25 00:01:07,383 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher
+2014-03-25 00:01:07,384 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskEventDispatcher
+2014-03-25 00:01:07,385 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskAttemptEventDispatcher
+2014-03-25 00:01:07,385 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventType for class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler
+2014-03-25 00:01:07,391 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.speculate.Speculator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$SpeculatorEventDispatcher
+2014-03-25 00:01:07,392 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.rm.ContainerAllocator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerAllocatorRouter
+2014-03-25 00:01:07,393 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncher$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerLauncherRouter
+2014-03-25 00:01:07,490 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobFinishEvent$Type for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobFinishEventHandler
+2014-03-25 00:01:07,748 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2014-03-25 00:01:07,799 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2014-03-25 00:01:07,799 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MRAppMaster metrics system started
+2014-03-25 00:01:07,807 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Adding job token for job_1395685580038_0002 to jobTokenSecretManager
+2014-03-25 00:01:07,938 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Not uberizing job_1395685580038_0002 because: not enabled;
+2014-03-25 00:01:07,956 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Input size for job job_1395685580038_0002 = 1575894. Number of splits = 6
+2014-03-25 00:01:07,958 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Number of reduces for job job_1395685580038_0002 = 1
+2014-03-25 00:01:07,958 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1395685580038_0002Job Transitioned from NEW to INITED
+2014-03-25 00:01:07,959 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: MRAppMaster launching normal, non-uberized, multi-container job job_1395685580038_0002.
+2014-03-25 00:01:08,007 INFO [Socket Reader #1 for port 24736] org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 24736
+2014-03-25 00:01:08,036 INFO [main] org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.mapreduce.v2.api.MRClientProtocolPB to the server
+2014-03-25 00:01:08,040 INFO [IPC Server listener on 24736] org.apache.hadoop.ipc.Server: IPC Server listener on 24736: starting
+2014-03-25 00:01:08,040 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2014-03-25 00:01:08,041 INFO [main] org.apache.hadoop.mapreduce.v2.app.client.MRClientService: Instantiated MRClientService at OmSkathi/172.16.16.1:24736
+2014-03-25 00:01:08,130 INFO [main] org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-03-25 00:01:08,135 INFO [main] org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.mapreduce is not defined
+2014-03-25 00:01:08,159 INFO [main] org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2014-03-25 00:01:08,164 INFO [main] org.apache.hadoop.http.HttpServer2: Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context mapreduce
+2014-03-25 00:01:08,164 INFO [main] org.apache.hadoop.http.HttpServer2: Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context static
+2014-03-25 00:01:08,167 INFO [main] org.apache.hadoop.http.HttpServer2: adding path spec: /mapreduce/*
+2014-03-25 00:01:08,167 INFO [main] org.apache.hadoop.http.HttpServer2: adding path spec: /ws/*
+2014-03-25 00:01:08,180 INFO [main] org.apache.hadoop.http.HttpServer2: Jetty bound to port 24743
+2014-03-25 00:01:08,180 INFO [main] org.mortbay.log: jetty-6.1.26
+2014-03-25 00:01:08,223 INFO [main] org.mortbay.log: Extract jar:file:/C:/hadoop-2.3.0/share/hadoop/yarn/hadoop-yarn-common-2.3.0.jar!/webapps/mapreduce to C:\Windows\TEMP\Jetty_0_0_0_0_24743_mapreduce____.rla3az\webapp
+2014-03-25 00:01:08,402 INFO [main] org.mortbay.log: Started SelectChannelConnector@0.0.0.0:24743
+2014-03-25 00:01:08,402 INFO [main] org.apache.hadoop.yarn.webapp.WebApps: Web app /mapreduce started at 24743
+2014-03-25 00:01:08,787 INFO [main] org.apache.hadoop.yarn.webapp.WebApps: Registered webapp guice modules
+2014-03-25 00:01:08,792 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: JOB_CREATE job_1395685580038_0002
+2014-03-25 00:01:08,797 INFO [Socket Reader #1 for port 24747] org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 24747
+2014-03-25 00:01:08,803 INFO [IPC Server listener on 24747] org.apache.hadoop.ipc.Server: IPC Server listener on 24747: starting
+2014-03-25 00:01:08,804 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2014-03-25 00:01:08,828 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: nodeBlacklistingEnabled:true
+2014-03-25 00:01:08,828 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: maxTaskFailuresPerNode is 3
+2014-03-25 00:01:08,828 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: blacklistDisablePercent is 33
+2014-03-25 00:01:08,883 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2014-03-25 00:01:08,883 WARN [main] org.apache.hadoop.conf.Configuration: job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2014-03-25 00:01:08,890 INFO [main] org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8030
+2014-03-25 00:01:08,983 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: maxContainerCapability: 8192
+2014-03-25 00:01:08,988 INFO [main] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Upper limit on the thread pool size is 500
+2014-03-25 00:01:08,991 INFO [main] org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy: yarn.client.max-nodemanagers-proxies : 500
+2014-03-25 00:01:09,003 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1395685580038_0002Job Transitioned from INITED to SETUP
+2014-03-25 00:01:09,007 INFO [CommitterEvent Processor #0] org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler: Processing the event EventType: JOB_SETUP
+2014-03-25 00:01:09,076 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1395685580038_0002Job Transitioned from SETUP to RUNNING
+2014-03-25 00:01:09,101 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved master to /default-rack
+2014-03-25 00:01:09,108 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395685580038_0002_m_000000 Task Transitioned from NEW to SCHEDULED
+2014-03-25 00:01:09,108 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved master to /default-rack
+2014-03-25 00:01:09,109 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395685580038_0002_m_000001 Task Transitioned from NEW to SCHEDULED
+2014-03-25 00:01:09,109 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved master to /default-rack
+2014-03-25 00:01:09,109 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395685580038_0002_m_000002 Task Transitioned from NEW to SCHEDULED
+2014-03-25 00:01:09,109 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved master to /default-rack
+2014-03-25 00:01:09,110 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395685580038_0002_m_000003 Task Transitioned from NEW to SCHEDULED
+2014-03-25 00:01:09,110 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved master to /default-rack
+2014-03-25 00:01:09,110 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395685580038_0002_m_000004 Task Transitioned from NEW to SCHEDULED
+2014-03-25 00:01:09,110 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved master to /default-rack
+2014-03-25 00:01:09,111 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395685580038_0002_m_000005 Task Transitioned from NEW to SCHEDULED
+2014-03-25 00:01:09,111 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395685580038_0002_r_000000 Task Transitioned from NEW to SCHEDULED
+2014-03-25 00:01:09,113 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000000_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-03-25 00:01:09,113 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000001_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-03-25 00:01:09,114 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000002_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-03-25 00:01:09,114 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000003_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-03-25 00:01:09,114 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000004_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-03-25 00:01:09,114 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000005_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-03-25 00:01:09,114 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_r_000000_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2014-03-25 00:01:09,117 INFO [Thread-49] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: mapResourceReqt:1024
+2014-03-25 00:01:09,128 INFO [Thread-49] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: reduceResourceReqt:1024
+2014-03-25 00:01:09,132 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Event Writer setup for JobId: job_1395685580038_0002, File: hdfs://master:54310/tmp/hadoop-yarn/staging/PrabaKarthi/.staging/job_1395685580038_0002/job_1395685580038_0002_1.jhist
+2014-03-25 00:01:09,985 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Before Scheduling: PendingReds:1 ScheduledMaps:6 ScheduledReds:0 AssignedMaps:0 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:0 ContRel:0 HostLocal:0 RackLocal:0
+2014-03-25 00:01:10,019 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1395685580038_0002: ask=3 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:6144, vCores:0> knownNMs=1
+2014-03-25 00:01:10,020 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=6144
+2014-03-25 00:01:10,020 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2014-03-25 00:01:11,033 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Got allocated containers 6
+2014-03-25 00:01:11,035 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1395685580038_0002_01_000002 to attempt_1395685580038_0002_m_000000_0
+2014-03-25 00:01:11,037 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1395685580038_0002_01_000003 to attempt_1395685580038_0002_m_000001_0
+2014-03-25 00:01:11,038 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1395685580038_0002_01_000004 to attempt_1395685580038_0002_m_000002_0
+2014-03-25 00:01:11,038 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1395685580038_0002_01_000005 to attempt_1395685580038_0002_m_000003_0
+2014-03-25 00:01:11,038 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1395685580038_0002_01_000006 to attempt_1395685580038_0002_m_000004_0
+2014-03-25 00:01:11,038 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1395685580038_0002_01_000007 to attempt_1395685580038_0002_m_000005_0
+2014-03-25 00:01:11,038 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Recalculating schedule, headroom=0
+2014-03-25 00:01:11,038 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2014-03-25 00:01:11,038 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: After Scheduling: PendingReds:1 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:6 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:6 ContRel:0 HostLocal:6 RackLocal:0
+2014-03-25 00:01:11,116 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved master to /default-rack
+2014-03-25 00:01:11,132 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: The job-jar file on the remote FS is hdfs://master:54310/tmp/hadoop-yarn/staging/PrabaKarthi/.staging/job_1395685580038_0002/job.jar
+2014-03-25 00:01:11,136 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: The job-conf file on the remote FS is /tmp/hadoop-yarn/staging/PrabaKarthi/.staging/job_1395685580038_0002/job.xml
+2014-03-25 00:01:11,137 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Adding #0 tokens and #1 secret keys for NM use for launching container
+2014-03-25 00:01:11,137 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Size of containertokens_dob is 1
+2014-03-25 00:01:11,138 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Putting shuffle token in serviceData
+2014-03-25 00:01:11,159 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000000_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-03-25 00:01:11,162 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved master to /default-rack
+2014-03-25 00:01:11,163 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000001_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-03-25 00:01:11,163 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved master to /default-rack
+2014-03-25 00:01:11,164 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000002_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-03-25 00:01:11,164 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved master to /default-rack
+2014-03-25 00:01:11,165 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000003_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-03-25 00:01:11,165 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved master to /default-rack
+2014-03-25 00:01:11,166 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000004_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-03-25 00:01:11,166 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved master to /default-rack
+2014-03-25 00:01:11,166 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000005_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2014-03-25 00:01:11,168 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1395685580038_0002_01_000002 taskAttempt attempt_1395685580038_0002_m_000000_0
+2014-03-25 00:01:11,168 INFO [ContainerLauncher #1] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1395685580038_0002_01_000003 taskAttempt attempt_1395685580038_0002_m_000001_0
+2014-03-25 00:01:11,169 INFO [ContainerLauncher #2] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1395685580038_0002_01_000004 taskAttempt attempt_1395685580038_0002_m_000002_0
+2014-03-25 00:01:11,169 INFO [ContainerLauncher #4] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1395685580038_0002_01_000006 taskAttempt attempt_1395685580038_0002_m_000004_0
+2014-03-25 00:01:11,169 INFO [ContainerLauncher #5] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1395685580038_0002_01_000007 taskAttempt attempt_1395685580038_0002_m_000005_0
+2014-03-25 00:01:11,170 INFO [ContainerLauncher #3] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1395685580038_0002_01_000005 taskAttempt attempt_1395685580038_0002_m_000003_0
+2014-03-25 00:01:11,171 INFO [ContainerLauncher #5] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1395685580038_0002_m_000005_0
+2014-03-25 00:01:11,171 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1395685580038_0002_m_000000_0
+2014-03-25 00:01:11,171 INFO [ContainerLauncher #1] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1395685580038_0002_m_000001_0
+2014-03-25 00:01:11,171 INFO [ContainerLauncher #4] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1395685580038_0002_m_000004_0
+2014-03-25 00:01:11,171 INFO [ContainerLauncher #3] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1395685580038_0002_m_000003_0
+2014-03-25 00:01:11,171 INFO [ContainerLauncher #2] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1395685580038_0002_m_000002_0
+2014-03-25 00:01:11,172 INFO [ContainerLauncher #5] org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy: Opening proxy : master:24248
+2014-03-25 00:01:11,232 INFO [ContainerLauncher #4] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1395685580038_0002_m_000004_0 : 13562
+2014-03-25 00:01:11,233 INFO [ContainerLauncher #1] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1395685580038_0002_m_000001_0 : 13562
+2014-03-25 00:01:11,233 INFO [ContainerLauncher #3] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1395685580038_0002_m_000003_0 : 13562
+2014-03-25 00:01:11,233 INFO [ContainerLauncher #2] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1395685580038_0002_m_000002_0 : 13562
+2014-03-25 00:01:11,232 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1395685580038_0002_m_000000_0 : 13562
+2014-03-25 00:01:11,232 INFO [ContainerLauncher #5] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1395685580038_0002_m_000005_0 : 13562
+2014-03-25 00:01:11,234 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1395685580038_0002_m_000000_0] using containerId: [container_1395685580038_0002_01_000002 on NM: [master:24248]
+2014-03-25 00:01:11,239 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000000_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-03-25 00:01:11,239 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1395685580038_0002_m_000003_0] using containerId: [container_1395685580038_0002_01_000005 on NM: [master:24248]
+2014-03-25 00:01:11,240 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000003_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-03-25 00:01:11,240 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1395685580038_0002_m_000005_0] using containerId: [container_1395685580038_0002_01_000007 on NM: [master:24248]
+2014-03-25 00:01:11,241 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000005_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-03-25 00:01:11,241 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1395685580038_0002_m_000002_0] using containerId: [container_1395685580038_0002_01_000004 on NM: [master:24248]
+2014-03-25 00:01:11,241 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000002_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-03-25 00:01:11,242 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1395685580038_0002_m_000004_0] using containerId: [container_1395685580038_0002_01_000006 on NM: [master:24248]
+2014-03-25 00:01:11,242 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000004_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-03-25 00:01:11,242 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1395685580038_0002_m_000001_0] using containerId: [container_1395685580038_0002_01_000003 on NM: [master:24248]
+2014-03-25 00:01:11,243 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1395685580038_0002_m_000001_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2014-03-25 00:01:11,243 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1395685580038_0002_m_000000
+2014-03-25 00:01:11,244 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395685580038_0002_m_000000 Task Transitioned from SCHEDULED to RUNNING
+2014-03-25 00:01:11,244 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1395685580038_0002_m_000003
+2014-03-25 00:01:11,244 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395685580038_0002_m_000003 Task Transitioned from SCHEDULED to RUNNING
+2014-03-25 00:01:11,244 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1395685580038_0002_m_000005
+2014-03-25 00:01:11,244 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395685580038_0002_m_000005 Task Transitioned from SCHEDULED to RUNNING
+2014-03-25 00:01:11,245 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1395685580038_0002_m_000002
+2014-03-25 00:01:11,245 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395685580038_0002_m_000002 Task Transitioned from SCHEDULED to RUNNING
+2014-03-25 00:01:11,245 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1395685580038_0002_m_000004
+2014-03-25 00:01:11,245 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395685580038_0002_m_000004 Task Transitioned from SCHEDULED to RUNNING
+2014-03-25 00:01:11,246 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: ATTEMPT_START task_1395685580038_0002_m_000001
+2014-03-25 00:01:11,246 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskImpl: task_1395685580038_0002_m_000001 Task Transitioned from SCHEDULED to RUNNING
+2014-03-25 00:01:12,093 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: getResources() for application_1395685580038_0002: ask=3 release= 0 newContainers=0 finishedContainers=0 resourcelimit=<memory:0, vCores:-6> knownNMs=1
+2014-03-25 00:01:20,201 INFO [Socket Reader #1 for port 24747] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1395685580038_0002 (auth:SIMPLE)
+2014-03-25 00:01:20,581 INFO [Socket Reader #1 for port 24747] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1395685580038_0002 (auth:SIMPLE)
+2014-03-25 00:01:20,582 INFO [IPC Server handler 2 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1395685580038_0002_m_000007 asked for a task
+2014-03-25 00:01:20,582 INFO [IPC Server handler 2 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1395685580038_0002_m_000007 given task: attempt_1395685580038_0002_m_000005_0
+2014-03-25 00:01:20,583 INFO [Socket Reader #1 for port 24747] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1395685580038_0002 (auth:SIMPLE)
+2014-03-25 00:01:20,586 INFO [Socket Reader #1 for port 24747] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1395685580038_0002 (auth:SIMPLE)
+2014-03-25 00:01:20,634 INFO [Socket Reader #1 for port 24747] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1395685580038_0002 (auth:SIMPLE)
+2014-03-25 00:01:20,664 INFO [IPC Server handler 1 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1395685580038_0002_m_000006 asked for a task
+2014-03-25 00:01:20,664 INFO [IPC Server handler 1 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1395685580038_0002_m_000006 given task: attempt_1395685580038_0002_m_000004_0
+2014-03-25 00:01:20,664 INFO [IPC Server handler 6 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1395685580038_0002_m_000005 asked for a task
+2014-03-25 00:01:20,665 INFO [IPC Server handler 6 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1395685580038_0002_m_000005 given task: attempt_1395685580038_0002_m_000003_0
+2014-03-25 00:01:20,809 INFO [Socket Reader #1 for port 24747] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for job_1395685580038_0002 (auth:SIMPLE)
+2014-03-25 00:01:21,473 INFO [IPC Server handler 5 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1395685580038_0002_m_000003 asked for a task
+2014-03-25 00:01:21,474 INFO [IPC Server handler 5 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1395685580038_0002_m_000003 given task: attempt_1395685580038_0002_m_000001_0
+2014-03-25 00:01:21,630 INFO [IPC Server handler 0 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1395685580038_0002_m_000004 asked for a task
+2014-03-25 00:01:21,630 INFO [IPC Server handler 0 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1395685580038_0002_m_000004 given task: attempt_1395685580038_0002_m_000002_0
+2014-03-25 00:01:21,749 INFO [IPC Server handler 7 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID : jvm_1395685580038_0002_m_000002 asked for a task
+2014-03-25 00:01:21,749 INFO [IPC Server handler 7 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: JVM with ID: jvm_1395685580038_0002_m_000002 given task: attempt_1395685580038_0002_m_000000_0
+2014-03-25 00:01:30,401 INFO [IPC Server handler 3 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000000_0
+2014-03-25 00:01:30,423 INFO [IPC Server handler 8 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000004_0
+2014-03-25 00:01:30,449 INFO [IPC Server handler 4 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000003_0
+2014-03-25 00:01:30,475 INFO [IPC Server handler 10 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000005_0
+2014-03-25 00:01:30,647 INFO [IPC Server handler 9 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000001_0
+2014-03-25 00:01:30,673 INFO [IPC Server handler 12 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000002_0
+2014-03-25 00:01:33,403 INFO [IPC Server handler 11 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000000_0
+2014-03-25 00:01:33,425 INFO [IPC Server handler 13 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000004_0
+2014-03-25 00:01:33,451 INFO [IPC Server handler 14 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000003_0
+2014-03-25 00:01:33,477 INFO [IPC Server handler 15 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000005_0
+2014-03-25 00:01:33,649 INFO [IPC Server handler 16 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000001_0
+2014-03-25 00:01:33,675 INFO [IPC Server handler 17 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000002_0
+2014-03-25 00:01:36,404 INFO [IPC Server handler 19 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000000_0
+2014-03-25 00:01:36,427 INFO [IPC Server handler 20 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000004_0
+2014-03-25 00:01:36,452 INFO [IPC Server handler 22 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000003_0
+2014-03-25 00:01:36,480 INFO [IPC Server handler 18 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000005_0
+2014-03-25 00:01:36,650 INFO [IPC Server handler 21 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000001_0
+2014-03-25 00:01:36,676 INFO [IPC Server handler 24 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000002_0
+2014-03-25 00:01:39,407 INFO [IPC Server handler 23 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000000_0
+2014-03-25 00:01:39,429 INFO [IPC Server handler 27 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000004_0
+2014-03-25 00:01:39,454 INFO [IPC Server handler 25 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000003_0
+2014-03-25 00:01:39,483 INFO [IPC Server handler 26 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000005_0
+2014-03-25 00:01:39,652 INFO [IPC Server handler 28 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000001_0
+2014-03-25 00:01:39,679 INFO [IPC Server handler 29 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000002_0
+2014-03-25 00:01:42,409 INFO [IPC Server handler 2 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000000_0
+2014-03-25 00:01:42,430 INFO [IPC Server handler 1 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000004_0
+2014-03-25 00:01:42,455 INFO [IPC Server handler 6 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000003_0
+2014-03-25 00:01:42,485 INFO [IPC Server handler 5 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000005_0
+2014-03-25 00:01:42,652 INFO [IPC Server handler 0 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000001_0
+2014-03-25 00:01:42,920 INFO [IPC Server handler 7 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000002_0
+2014-03-25 00:01:45,410 INFO [IPC Server handler 3 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000000_0
+2014-03-25 00:01:45,430 INFO [IPC Server handler 8 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000004_0
+2014-03-25 00:01:45,456 INFO [IPC Server handler 4 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000003_0
+2014-03-25 00:01:45,485 INFO [IPC Server handler 10 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000005_0
+2014-03-25 00:01:45,686 INFO [IPC Server handler 9 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000001_0
+2014-03-25 00:01:45,921 INFO [IPC Server handler 12 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000002_0
+2014-03-25 00:01:48,410 INFO [IPC Server handler 11 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000000_0
+2014-03-25 00:01:48,432 INFO [IPC Server handler 13 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000004_0
+2014-03-25 00:01:48,457 INFO [IPC Server handler 14 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000003_0
+2014-03-25 00:01:48,487 INFO [IPC Server handler 15 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000005_0
+2014-03-25 00:01:48,687 INFO [IPC Server handler 16 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000001_0
+2014-03-25 00:01:48,922 INFO [IPC Server handler 17 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000002_0
+2014-03-25 00:01:51,412 INFO [IPC Server handler 19 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000000_0
+2014-03-25 00:01:51,433 INFO [IPC Server handler 20 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000004_0
+2014-03-25 00:01:51,458 INFO [IPC Server handler 22 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000003_0
+2014-03-25 00:01:51,488 INFO [IPC Server handler 18 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000005_0
+2014-03-25 00:01:51,688 INFO [IPC Server handler 21 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000001_0
+2014-03-25 00:01:51,923 INFO [IPC Server handler 24 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000002_0
+2014-03-25 00:01:54,435 INFO [IPC Server handler 23 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000004_0
+2014-03-25 00:01:54,460 INFO [IPC Server handler 27 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000003_0
+2014-03-25 00:01:54,524 INFO [IPC Server handler 25 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1395685580038_0002_m_000005_0
+2014-03-25 00:01:54,525 INFO [IPC Server handler 25 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1395685580038_0002_m_000005_0 is : 0.0
+2014-03-25 00:01:54,525 INFO [IPC Server handler 26 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1395685580038_0002_m_000002_0
+2014-03-25 00:01:54,526 INFO [IPC Server handler 26 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1395685580038_0002_m_000002_0 is : 0.0
+2014-03-25 00:01:54,526 INFO [IPC Server handler 28 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1395685580038_0002_m_000001_0
+2014-03-25 00:01:54,526 INFO [IPC Server handler 28 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1395685580038_0002_m_000001_0 is : 0.0
+2014-03-25 00:01:54,526 INFO [IPC Server handler 29 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1395685580038_0002_m_000003_0
+2014-03-25 00:01:54,526 INFO [IPC Server handler 2 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Status update from attempt_1395685580038_0002_m_000004_0
+2014-03-25 00:01:54,526 INFO [IPC Server handler 29 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1395685580038_0002_m_000003_0 is : 0.0
+2014-03-25 00:01:54,526 INFO [IPC Server handler 2 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1395685580038_0002_m_000004_0 is : 0.0
+2014-03-25 00:01:54,690 INFO [IPC Server handler 1 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000001_0
+2014-03-25 00:01:54,924 INFO [IPC Server handler 6 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000002_0
+2014-03-25 00:01:56,187 INFO [IPC Server handler 5 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000005_0
+2014-03-25 00:01:56,614 INFO [IPC Server handler 0 on 24747] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Ping from attempt_1395685580038_0002_m_000000_0

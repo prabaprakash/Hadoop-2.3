@@ -1,0 +1,2 @@
+[0x7FFEE7118D9C] ANOMALY: use of REX.w is meaningless (default operand size is 64)
+[0x7FFEE7113840] ANOMALY: use of REX.w is meaningless (default operand size is 64)
